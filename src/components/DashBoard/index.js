@@ -73,13 +73,23 @@ const DashBoard = () => {
         <TextCon>
           <IconCon>
             <List>
-              <Button type="button" data-testid="bold" style={Boldstyle}>
-                <VscBold onClick={onClickBold} />
+              <Button
+                type="button"
+                data-testid="bold"
+                style={Boldstyle}
+                onClick={onClickBold}
+              >
+                <VscBold />
               </Button>
             </List>
             <List>
-              <Button type="button" data-testid="italic" style={ItalicStyle}>
-                <GoItalic onClick={onClickItalic} />
+              <Button
+                type="button"
+                data-testid="italic"
+                style={ItalicStyle}
+                onClick={onClickItalic}
+              >
+                <GoItalic />
               </Button>
             </List>
             <List>
@@ -87,8 +97,9 @@ const DashBoard = () => {
                 type="button"
                 data-testid="underline"
                 style={UnderlineStyle}
+                onClick={onClickUnderLine}
               >
-                <AiOutlineUnderline onClick={onClickUnderLine} />
+                <AiOutlineUnderline />
               </Button>
             </List>
           </IconCon>
@@ -98,9 +109,7 @@ const DashBoard = () => {
             onTapItalic={ItalicIconActive}
             onTapUndeLine={underLineIconActive}
             onChange={onChangeText}
-          >
-            {displayText}
-          </TextArea>
+          />
         </TextCon>
       </DashBoardCon>
     </AppContainer>
